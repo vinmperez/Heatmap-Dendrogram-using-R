@@ -4,7 +4,7 @@ read.csv("oleic_acid_heatmap.csv")        #Check your file
 oa<-read.csv("oleic_acid_heatmap.csv")    #Objectify the file
 row.names(oa) <- oa$phospholipid_species  #Start to build a name object
 
-########alternatively, this is useful too###################
+########alternatively, this is useful too, but especially not required here###################
 row1<-oa[,1]
 row.names(oa)<-make.names(row1, unique=TRUE)
 fix(oa)

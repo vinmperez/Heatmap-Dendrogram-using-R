@@ -13,11 +13,11 @@ fix(oa)
 oa <- oa[,2:6]
 oa_matrix <- data.matrix(oa)		          #transforms data into a matrix
 
-pdf("heatmap.pdf")                        #Finally, let there be heatmapt
+pdf("heatmap.pdf")                        #Finally, let there be heatmap
 oa_heatmap <- heatmap(oa_matrix, Rowv=NA, Colv=NA, col = heat.colors(256), scale="column", margins=c(5,10))
 dev.off()                                 #Its not pretty but you get the idea
 
-#########alternatively, this will create a nicer heatmape with ggplot##################
+#########alternatively, this will create a nicer heatmap with ggplot (you'll have to creat "log_smpl"##################
 
 library("gplots")
 smpl_heatmap<-heatmap.2(log_smpl, Rowv=NA, Colv=NA,

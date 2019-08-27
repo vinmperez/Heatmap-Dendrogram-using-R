@@ -1,6 +1,6 @@
 # R-Heatmap-Files
 Here you'll find 2 files necessary to carry out the code
-that will allow you to build a very crude heatmap in R.
+that will allow you to build a crude heatmap in R.
 
 This is 1 of the final products:
 
